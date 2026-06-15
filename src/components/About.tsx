@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, Target, Sparkles, BarChart3 } from 'lucide-react';
+import { GraduationCap, Target, Sparkles, BarChart3 } from 'lucide-react';4
+import profileImage from './profile_ai.png.png';
 
 const highlights = [
   {
@@ -55,7 +56,7 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={profileImage}
                 alt="Data Analytics"
                 className="w-full h-auto rounded-2xl"
               />
