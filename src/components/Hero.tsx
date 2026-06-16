@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Download, Github, Linkedin, ChevronDown } from 'lucide-react';
-
+import profileImage from './profile_ai.png.png';
 const roles = [
   'Data Analyst',
   'Power BI Developer',
@@ -187,9 +187,7 @@ export default function Hero() {
               {/* Main circle */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 p-1">
                 <div className="w-full h-full rounded-full bg-dark-900 flex items-center justify-center overflow-hidden">
-                  <img
-                    src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Siddhi Maurya"
+                  <img src={profileImage} alt="Siddhi Maurya" 
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
