@@ -5,7 +5,7 @@ import profileImage from './profile_ai.png.png';
 const highlights = [
   {
     icon: GraduationCap,
-    title: 'TY BSc CS Student',
+    title: 'MSc Data Science and AI Student',
     description: 'Computer Science with Data Science specialization',
   },
   {
@@ -15,8 +15,8 @@ const highlights = [
   },
   {
     icon: BarChart3,
-    title: 'Dashboard Expert',
-    description: 'Creating interactive Power BI and Tableau dashboards',
+    title: 'ML Models & Dashboards',
+    description: 'Building ML solutions and dashboards for real-world impact',
   },
   {
     icon: Sparkles,
@@ -76,7 +76,7 @@ export default function About() {
                   <GraduationCap className="text-white" size={24} />
                 </div>
                 <div>
-                  <p className="text-white font-semibold">TY BSc CS</p>
+                  <p className="text-white font-semibold">FY MSc DS & AI</p>
                   <p className="text-dark-400 text-sm">Data Science</p>
                 </div>
               </div>
@@ -98,18 +98,16 @@ export default function About() {
             </h3>
 
             <p className="text-dark-300 text-lg leading-relaxed mb-6">
-              I'm a Third Year BSc Computer Science student with a specialization in Data Science
-              and Analytics. My passion lies in exploring data through visualization, business
-              intelligence, and machine learning to drive informed decision-making.
+              Hi, I'm Siddhi Maurya,
+              A Data Science and Artificial Intelligence enthusiast currently pursuing an M.Sc. in Data Science & AI, with a strong academic foundation in B.Sc. Computer Science. I enjoy transforming complex data into meaningful insights and building intelligent solutions that solve real-world problems.
             </p>
 
             <p className="text-dark-300 text-lg leading-relaxed mb-8">
-              Skilled in Power BI, Tableau, Python, SQL, Excel, and Machine Learning. I have
-              developed strong analytical skills through hands-on projects and internships,
-              focusing on creating impactful dashboards and extracting meaningful insights from
-              complex datasets.
+              My interests span Data Analytics, Machine Learning, Business Intelligence, and AI-driven applications. I work with tools such as Python, SQL, Power BI, Tableau, and Excel to uncover patterns, tell compelling data stories, and support data-driven decision-making.
             </p>
-
+            <p className="text-dark-300 text-lg leading-relaxed mb-8">
+              I believe technology is most powerful when it creates value for people, and I'm continuously learning, experimenting, and building projects that bridge the gap between data and impactful solutions.
+            </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {highlights.map((item, index) => (
                 <motion.div

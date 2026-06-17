@@ -1,47 +1,63 @@
 import { motion } from 'framer-motion';
-import { Code, Database, BarChart2, Brain, LineChart, PieChart, FileSpreadsheet, GitBranch, Layers, Cpu } from 'lucide-react';
+import {
+  BarChart2,
+  PieChart,
+  LineChart,
+  FileSpreadsheet,
+  Code,
+  Code2,
+  Database,
+  FileCode,
+  Brain,
+  TrendingUp,
+  Network,
+  GitBranch,
+  Wrench,
+  Cpu,
+  NotebookPen,
+} from 'lucide-react';
 
 const skills = [
   {
-    category: 'Data Analytics',
-    icon: BarChart2,
-    color: 'from-blue-500 to-cyan-500',
-    items: [
-      { name: 'Power BI', icon: PieChart },
-      { name: 'Tableau', icon: LineChart },
-      { name: 'Excel', icon: FileSpreadsheet },
-    ],
-  },
-  {
-    category: 'Programming',
-    icon: Code,
-    color: 'from-purple-500 to-pink-500',
-    items: [
-      { name: 'Python', icon: Code },
-      { name: 'SQL', icon: Database },
-      { name: 'Pandas', icon: Layers },
-    ],
-  },
-  {
-    category: 'AI & ML',
-    icon: Brain,
-    color: 'from-green-500 to-teal-500',
-    items: [
-      { name: 'Machine Learning', icon: Brain },
-      { name: 'Data Modeling', icon: Cpu },
-      { name: 'Statistics', icon: BarChart2 },
-    ],
-  },
-  {
-    category: 'Tools',
-    icon: GitBranch,
-    color: 'from-orange-500 to-red-500',
-    items: [
-      { name: 'Git', icon: GitBranch },
-      { name: 'GitHub', icon: GitBranch },
-      { name: 'VS Code', icon: Code },
-    ],
-  },
+  category: 'Data Analytics',
+  icon: BarChart2,
+  color: 'from-blue-500 to-cyan-500',
+  items: [
+    { name: 'Power BI', icon: PieChart },
+    { name: 'Tableau', icon: LineChart },
+    { name: 'Excel', icon: FileSpreadsheet },
+  ],
+},
+{
+  category: 'Programming',
+  icon: Code,
+  color: 'from-purple-500 to-pink-500',
+  items: [
+    { name: 'Python', icon: Code2 },
+    { name: 'SQL', icon: Database },
+    { name: 'PHP', icon: FileCode },
+  ],
+},
+{
+  category: 'AI & ML',
+  icon: Brain,
+  color: 'from-green-500 to-teal-500',
+  items: [
+    { name: 'Deep Learning', icon: Brain },
+    { name: 'Predictive Analytics', icon: TrendingUp },
+    { name: 'Neural Networks', icon: Network },
+  ],
+},
+{
+  category: 'Tools',
+  icon: Wrench,
+  color: 'from-orange-500 to-red-500',
+  items: [
+    { name: 'Git', icon: GitBranch },
+    { name: 'Scikit-learn', icon: Cpu },
+    { name: 'Jupyter Notebook', icon: NotebookPen },
+  ],
+},
 ];
 
 export default function Skills() {

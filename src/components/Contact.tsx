@@ -6,22 +6,22 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'siddhi.maurya@email.com',
-    href: 'mailto:siddhi.maurya@email.com',
+    value: 'mauryasam556@gmail.com',
+    href: 'mailto:mauryasam556@gmail.com',
     color: 'from-primary-500 to-accent-500',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/siddhimaurya',
-    href: 'https://linkedin.com/in/siddhimaurya',
+    value: 'linkedin.com/in/siddhi-maurya-s05a04m/',
+    href: 'https://www.linkedin.com/in/siddhi-maurya-s05a04m/',
     color: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/siddhimaurya',
-    href: 'https://github.com/siddhimaurya',
+    value: 'github.com/sam05maurya',
+    href: 'https://github.com/sam05maurya',
     color: 'from-gray-500 to-gray-600',
   },
 ];
