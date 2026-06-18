@@ -18,7 +18,7 @@ export default function Footer() {
             <h3 className="text-2xl font-display font-bold bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
               Siddhi Maurya
             </h3>
-            <p className="text-dark-400 text-sm mt-2">Data Analyst | Power BI Developer</p>
+            <p className="text-dark-400 text-sm mt-2">Data Analyst | Data Scientist</p>
           </motion.div>
 
           {/* Social */}
@@ -30,7 +30,7 @@ export default function Footer() {
             className="flex gap-4"
           >
             <motion.a
-              href="https://github.com/siddhimaurya"
+              href="https://github.com/sam05maurya"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
@@ -39,7 +39,7 @@ export default function Footer() {
               <Github size={18} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/siddhimaurya"
+              href="https://www.linkedin.com/in/siddhi-maurya-s05a04m/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
@@ -75,7 +75,7 @@ export default function Footer() {
         >
           <p>&copy; {new Date().getFullYear()} Siddhi Maurya. All rights reserved.</p>
           <p className="flex items-center gap-1">
-            Built with <Heart className="text-red-500" size={14} fill="currentColor" /> using React & Tailwind
+            Built with <Heart className="text-red-500" size={14} fill="currentColor" /> fueled by creativity
           </p>
         </motion.div>
       </div>

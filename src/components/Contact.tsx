@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Linkedin, Github, Send, MapPin, Heart } from 'lucide-react';
+import emailjs from '@emailjs/browser'; 
 
 const contactInfo = [
   {
@@ -32,15 +33,38 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1500));
-    setIsSubmitting(false);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', message: '' });
-    setTimeout(() => setSubmitted(false), 5000);
-  };
+  e.preventDefault();
+  setIsSubmitting(true);
 
+  try {
+    await emailjs.send(
+      'service_d17agst', //  Service ID
+      'template_h3p4da7', // Template ID
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        time: new Date().toLocaleString(),
+      },
+      'U9NGFber9OAknJkII' // Public Key
+    );
+
+    setSubmitted(true);
+
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
+
+    setTimeout(() => setSubmitted(false), 5000);
+  } catch (error) {
+    console.error('EmailJS Error:', error);
+    alert('Failed to send message. Please try again.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
   return (
     <section id="contact" className="py-20 md:py-28 bg-dark-900/50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

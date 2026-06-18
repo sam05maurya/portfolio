@@ -4,17 +4,43 @@ import { Calendar, Building2, MapPin, BarChart3, Presentation, Users, Lightbulb 
 const experiences = [
   {
     title: 'Implementation Data Analyst Intern',
-    company: 'Microsoft',
-    location: 'Virtual',
-    period: '2024',
-    description: 'Worked on real-world data analytics and AI-focused implementation projects.',
+    company: 'Convergence IT Services - uKnowva HRMS',
+    location: 'On-Site',
+    period: 'Apr 2026 - Present',
+    description: 'Supporting end-to-end implementation of the uKnowva HRMS platform by configuring solutions, managing client requirements, and ensuring successful system deployment.',
     highlights: [
-      { icon: BarChart3, text: 'Developed interactive dashboards using Power BI' },
-      { icon: Presentation, text: 'Applied data analysis techniques for business insights' },
-      { icon: Users, text: 'Collaborated on project-based learning activities' },
-      { icon: Lightbulb, text: 'Gained practical experience in business intelligence' },
+      { icon: BarChart3, text: 'Gathered and analyzed client requirements for HRMS implementation.' },
+      { icon: Presentation, text: 'Configured modules and supported system testing and deployment.' },
+      { icon: Users, text: 'Worked with SQL queries for data validation and troubleshooting.' },
+      { icon: Lightbulb, text: 'Assisted in API integrations and JSON-based data configurations.' },
     ],
   },
+  {
+  title: 'Power BI Expert Intern',
+  company: 'Microsoft Elevate',
+  location: 'Remote',
+  period: 'Feb 2026 - Mar 2026',
+  description: 'Developed data visualization solutions and dashboards to transform raw data into actionable business insights.',
+  highlights: [
+    { icon: BarChart3, text: 'Built interactive Power BI dashboards.' },
+    { icon: Lightbulb, text: 'Performed data cleaning and transformation.' },
+    { icon: Presentation, text: 'Created KPIs and analytical reports.' },
+    { icon: Users, text: 'Presented insights through data storytelling.' },
+  ],
+},
+{
+  title: 'Business Analysis Intern',
+  company: 'Yadgreen India',
+  location: 'Remote',
+  period: 'Aug 2025 - Jan 2026',
+  description: 'Worked on a Smart City Traffic Management project using analytics, forecasting, and visualization techniques.',
+  highlights: [
+    { icon: BarChart3, text: 'Cleaned and transformed traffic datasets.' },
+    { icon: Building2, text: 'Designed a star schema data model.' },
+    { icon: Presentation, text: 'Built interactive Power BI dashboards.' },
+    { icon: Lightbulb, text: 'Applied forecasting for trend analysis.' },
+  ],
+},
 ];
 
 export default function Experience() {
