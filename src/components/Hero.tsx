@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Download, Github, Linkedin,Mail, ChevronDown } from 'lucide-react';
 import profileImage from './profile_ai.png.png';
+
 const roles = [
-  'Data Scientist',
-  'Business Analyst',
+  'Data Analyst',
+  'Machine Learning Engineer',
   'Power BI Developer',
-  'Machine Learning',
+  'AI & Data Science Enthusiast',
   'Python Developer',
-  'Generative AI Enthusiast',
+  'Data Visualization Specialist',
 ];
 
 export default function Hero() {
@@ -48,39 +49,13 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-dark-950">
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-900 via-dark-950 to-dark-900" />
+<div className="absolute inset-0 bg-slate-950">
+  <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
 
-        {/* Floating orbs */}
-        {[...Array(6)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full blur-3xl opacity-20"
-            style={{
-              width: Math.random() * 400 + 200,
-              height: Math.random() * 400 + 200,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              background: i % 2 === 0 ? '#3b82f6' : '#a855f7',
-            }}
-            animate={{
-              x: [0, Math.random() * 100 - 50, 0],
-              y: [0, Math.random() * 100 - 50, 0],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 8 + i * 2,
-              repeat: Infinity,
-              ease: 'easeInOut',
-            }}
-          />
-        ))}
-
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:100px_100px]" />
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+  {/* Analytics Grid */}
+  <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.05)_1px,transparent_1px)] bg-[size:70px_70px]" />
+</div>
+<div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <motion.div
@@ -127,8 +102,8 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
               className="text-dark-400 text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              MSc Data Science and AI Student | BSc Computer Science Graduate | Passionate about transforming complex data into actionable insights.
-              Specialized in Power BI, Python, SQL, and Machine Learning.
+              MSc Data Science & AI Student skilled in Power BI, Python, SQL, Machine Learning, and Data Visualization. Passionate about transforming complex data into actionable business insights and building AI-driven solutions.
+            
             </motion.p>
 
             <motion.div
@@ -137,14 +112,17 @@ export default function Hero() {
               transition={{ delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-xl shadow-lg shadow-primary-500/25 flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-primary-500/40 transition-all"
-              >
-                <Download size={20} />
-                Download Resume
-              </motion.button>
+              <motion.a
+  href="/portfolio/Siddhi_Maurya_Resume.pdf"
+  download
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-xl shadow-lg shadow-primary-500/25 flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-primary-500/40 transition-all"
+>
+  <Download size={20} />
+  Download Resume
+</motion.a>
+  
 
               <div className="flex gap-3 justify-center">
                 <motion.a
@@ -191,7 +169,7 @@ export default function Hero() {
             <div className="relative">
               {/* Glow effect */}
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-3xl opacity-30"
+                className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-2xl opacity-15"
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 4, repeat: Infinity }}
               />
@@ -219,7 +197,7 @@ export default function Hero() {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
               >
-                <span className="text-2xl md:text-3xl">🐍</span>
+                <span className="text-2xl md:text-3xl">🤖</span>
               </motion.div>
 
               <motion.div

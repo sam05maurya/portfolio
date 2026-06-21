@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { GraduationCap, Target, Sparkles, BarChart3 } from 'lucide-react';4
-import profileImage from './profile_ai.png.png';
+import profileImage2 from './image.png';
 
 const highlights = [
   {
@@ -56,31 +56,12 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden">
               <img
-                src={profileImage}
+                src={profileImage2}
                 alt="Data Analytics"
                 className="w-full h-auto rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent" />
             </div>
-
-            {/* Floating card */}
-            <motion.div
-              className="absolute -bottom-6 -right-6 bg-dark-800/90 backdrop-blur-xl rounded-xl p-4 border border-dark-700 shadow-xl"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
-                  <GraduationCap className="text-white" size={24} />
-                </div>
-                <div>
-                  <p className="text-white font-semibold">FY MSc DS & AI</p>
-                  <p className="text-dark-400 text-sm">Data Science</p>
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* Content Side */}
