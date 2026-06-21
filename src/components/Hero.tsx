@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Download, Github, Linkedin,Mail, ChevronDown } from 'lucide-react';
 import profileImage from './profile_ai.png.png';
 
+
 const roles = [
   'Data Analyst',
   'Machine Learning Engineer',
@@ -112,12 +113,9 @@ export default function Hero() {
               transition={{ delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
-              <motion.a
-  href="/portfolio/Siddhi_Maurya_Resume.pdf"
+          <motion.a
+  href={`${import.meta.env.BASE_URL}Siddhi_Maurya_Resume.pdf`}
   download
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  className="px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-xl shadow-lg shadow-primary-500/25 flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-primary-500/40 transition-all"
 >
   <Download size={20} />
   Download Resume
